@@ -53,13 +53,12 @@ input {
 button {
     display: flex;
     max-width: 120px;
-    /* width: 80%; */
     background-color: #4B4B4B;
     border: none;
     border-radius: 0.375em;
     color: #FFFFFF;
-    /* padding: 0.25em 1em; */
-    /* border: 1px solid white; */
+    padding: 0.25em 0.5rem;
+    font-size: 0.75rem;
 }
 
 .search-container{
