@@ -14,7 +14,7 @@ header {
     max-height: 208px;
     height: 100%;
     /* background-color: #0E0E0E; */
-    background-color: red;
+    /* background-color: red; */
     color: #FFFFFF;
     background-image: url("images/movie_background_2.jpeg");
     background-size:80%;
@@ -47,7 +47,7 @@ input {
     border: none;
     /* padding: 10px; */
     text-align: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 button {
@@ -59,7 +59,7 @@ button {
     border-radius: 0.375em;
     color: #FFFFFF;
     /* padding: 0.25em 1em; */
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .search-container{
@@ -73,7 +73,7 @@ button {
     border-radius: 0.375em;
     background-color: #2E2E2F;
     padding: 0.125em;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 i {
@@ -97,10 +97,28 @@ i {
 .filler-img {
     width: 70px;
     height: 62px;
-    margin-top: 211px;
+    /* margin-top: 211px; */
     
 }
 
 form {
     margin: 0;
+}
+
+.movie-list {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 211px;
+}
+
+.movie-list p {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+     color: #2E2E2F;
 }
