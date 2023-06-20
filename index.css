@@ -13,7 +13,6 @@ header {
     width:400px;
     max-height: 208px;
     height: 100%;
-    /* border: 1px solid white; */
     background-color: #0E0E0E;
     color: #FFFFFF;
     background-image: url("images/movie_background_2.jpeg");
@@ -31,41 +30,20 @@ p {
     color: #FFFFFF;
     line-height: 1.5;
     margin-left: 42px;
-    /* position: absolute;
-    left: 42px;
-    top: 82.45px; */
 }
 
- span {
-    font-size: 0.5em;
+span {
+    font-size: 0.75em;
     margin-right: 48px;
 }
 
-i {
-    position: absolute;
-    left: 0;
-    top: 35%;
-    color: black;
-}
 
 input {
-
     width: 260px;
-    /* border: 1px solid white; */
-    /* width: 342px;
-    height: 38px;
-    padding: 0.5625em 0.8125em;
-    font-weight: 500;
-    font-size: 0.875em;
-    line-height: 1.25;
-    color: #A5A5A5; */
-    /* background-color: #2E2E2F;; */
-    background-color: white;;
+    background-color: #2E2E2F;;
     border: none;
     padding: 10px;
     text-align: center;
-    /* border: 1px solid yellow; */
-
 }
 
 button {
@@ -75,8 +53,6 @@ button {
     border-radius: 0.375em;
     color: #FFFFFF;
     padding: 0.25em 1em;
-    ;
-    /* height: 38px; */
 }
 
 .search-container{
@@ -90,39 +66,24 @@ button {
     border-radius: 0.375em;
     background-color: #2E2E2F;
     padding: 0.125em;
-    /* justify-content: center;
-    align-items: center;
-    gap: 0;
-    border: 1px solid red; 
-    margin: 189px 44px 645px 44px;
-    margin-top: -20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-left: 44px;
-    margin-right: 44px;
-    background-color: #2E2E2F;
-    padding: 0;
-    border-radius: 0.375em; */
-
 }
 
 i {
     position: relative;
     color: white;
-    padding: 0.25rem;
+    padding: 0.5rem;
     min-width: 40px;
     top: 0;
-
 }
 
 .list {
-    /* border: 1px solid red; */
     height: 572px; 
     max-width: 550px;
     width:400px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #4B4B4B;
 }
 
 .filler-img {
