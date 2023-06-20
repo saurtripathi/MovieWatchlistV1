@@ -1,0 +1,42 @@
+html,
+body {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    background-color:#121212;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+  }
+header {
+    max-width: 550px;
+    width:400px;
+    max-height: 208px;
+    height: 100%;
+    border: 1px solid #001219;
+    background-color: #0E0E0E;
+    color: #FFFFFF;
+    background-image: url("images/movie_background_2.jpeg");
+    background-size:80%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 800;
+    font-style: normal;
+    color: #FFFFFF;
+    line-height: 1.5;
+    margin-left: 42px;
+    /* position: absolute;
+    left: 42px;
+    top: 82.45px; */
+}
+
+ span {
+    font-size: 0.25em;
+    margin-right: 48px;
+}
