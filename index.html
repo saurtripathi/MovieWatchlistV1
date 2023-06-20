@@ -3,6 +3,8 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="index.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +21,18 @@
         <p>Find your film</p>
         <a><span>My Watchlist</span></a>
     </header>
+    <div class="list" id="list">
+        <form class="example" action="watchlist.html">
+            <div class="search-container">
+                <i class="fa fa-search"></i>
+                <input type="text"  name="search" placeholder="Blade Runner">
+                <button type="submit">Search</button> 
+            </div>
+          </form>
+          <img src="images/film-black.png" class="filler-img"/>
+    </div>
+
+
 
     <script src="/index.js" type="module"></script>
 </body>
