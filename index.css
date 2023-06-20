@@ -50,8 +50,8 @@ i {
 
 input {
 
-    width: 342px;
-    /* border: 1px solid red; */
+    width: 260px;
+    /* border: 1px solid white; */
     /* width: 342px;
     height: 38px;
     padding: 0.5625em 0.8125em;
@@ -59,7 +59,8 @@ input {
     font-size: 0.875em;
     line-height: 1.25;
     color: #A5A5A5; */
-    background-color: #2E2E2F;;
+    /* background-color: #2E2E2F;; */
+    background-color: white;;
     border: none;
     padding: 10px;
     text-align: center;
@@ -81,7 +82,7 @@ button {
 .search-container{
     display: flex;
     max-width: 462px;
-    width: 80%;
+    width: 87%;
     height: 38px;
     margin-left: auto;
     margin-right: auto;
