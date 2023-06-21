@@ -4,9 +4,11 @@
 
 // https://www.omdbapi.com/?i=tt3896198&apikey=2c13b038&t=Blade+Runner&plot=full
 
+// http://www.omdbapi.com/?i=tt3896198&apikey=232da52c
+
 const baseUrl = 'http://www.omdbapi.com/'
 const i = 'tt3896198'
-const apikey = '2c13b038'
+const apikey = '232da52c'
 const titleArray = []
 const genreArray = []
 const plotArray = []
