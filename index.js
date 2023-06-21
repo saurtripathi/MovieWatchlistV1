@@ -6,7 +6,7 @@
 
 // http://www.omdbapi.com/?i=tt3896198&apikey=232da52c
 
-const baseUrl = 'http://www.omdbapi.com/'
+const baseUrl = 'https://www.omdbapi.com/'
 const i = 'tt3896198'
 const apikey = '232da52c'
 const titleArray = []
