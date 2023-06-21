@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="index.css">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/8e15126712.js" crossorigin="anonymous"></script>
+   
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,23 +24,18 @@
         <a><span>My Watchlist</span></a>
     </header>
     <div class="list" id="list">
-        <form  action="watchlist.html">
+        <form id="myForm">
             <div class="search-container">
                 <i class="fa fa-search"></i>
-                <input type="text"  name="search" placeholder="Blade Runner">
-                <button type="submit">Search</button> 
+                <input type="text" name="search" placeholder="Blade Runner">
+                <button id="search">Search</button>
             </div>
-          </form>
-          <div class="movie-list">
-            <img src="images/film-black.png" class="filler-img"/>
+        </form>
+        <div class="movie-list mt" id="movie-list">
+            <img src="images/film-black.png" class="filler-img" />
             <p>Start exploring</p>
-          </div>
-          
+        </div>
     </div>
-
-
-
     <script src="/index.js" type="module"></script>
 </body>
-
 </html>
