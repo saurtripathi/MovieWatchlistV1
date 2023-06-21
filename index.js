@@ -31,8 +31,14 @@ document.getElementById('myForm').addEventListener('submit', async (event) => {
     console.log(`${baseUrl}?i=${i}&apikey=${apikey}&t=${searchParameter}`)
     const response = await fetch(`${baseUrl}?i=${i}&apikey=${apikey}&s=${searchParameter}`)
     const data = await response.json()
-    data.Search.forEach(movie => titleArray.push(movie.Title))
-    // let html =''
+    if(data.Response === 'False'){
+        movieListDiv.innerHTML = `<div class="error-div" >
+                                        <p>Unable to find what you’re looking for. Please try another search.</p>
+                                </div>`
+                                    
+                                
+    }else {
+        data.Search.forEach(movie => titleArray.push(movie.Title))
     console.log(titleArray)
 
     titleArray.forEach(async title => {
@@ -63,6 +69,9 @@ document.getElementById('myForm').addEventListener('submit', async (event) => {
             </div>`
         movieListDiv.innerHTML = html
     })
+    }
+ 
+
 
 })
 
