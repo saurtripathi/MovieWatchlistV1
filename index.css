@@ -164,27 +164,34 @@ form {
 
 .movie-card {
     display: flex;
+    flex-direction: column;
     /* background-color: white; */
     border-bottom: 1.5px solid #2C2C2C;
-    padding: 2em 0;
     max-width: 462px;
     width: 87%;
     /* border:1px solid white; */
-    margin: 2.625em 0;
+    /* margin: 2.625em 0; */
+    padding: 1em 0;
 }
 
 .poster {
-    width: 100px;
+    width: 100%;
+    height: 100%;
     /* border: 1px solid red; */
-    ;
-    /* height: 147px; */
+    background-size: cover;
+}
+
+.poster-div {
+    display: flex;
+    height: 300px;
+    margin-bottom: 1.5em;
 }
 
 .description {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 .title {

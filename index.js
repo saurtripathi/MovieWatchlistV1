@@ -51,7 +51,7 @@ document.getElementById('myForm').addEventListener('submit', async (event) => {
             let runtime = d.Runtime
 
             html += `<div class="movie-card" >
-                <div>
+                <div class="poster-div" >
                             <img src="${poster}" class="poster"/>
                 </div>
                 <div class="description" >
