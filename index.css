@@ -102,8 +102,8 @@ i {
     max-width: 550px;
     max-height: 779px;
     width: 100vw;
-    height: 100vh;
-    margin: 1em auto;
+    height: 95vh;
+    margin: 0 auto;
     border: 1px solid yellow;
     /* padding: 2em 0; */
 }
