@@ -107,12 +107,10 @@ i {
     display: flex;
     flex-direction: column;
     max-width: 550px;
-    /* max-height: 779px; */
+    /* max-width: 1200px; */
     width: 100vw;
-    height: 92vh;
+    /* height: 92vh; */
     margin: 0 auto;
-    /* border: 1px solid yellow; */
-    /* padding: 1em 0; */
 }
 
 .filler-img {
