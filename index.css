@@ -175,7 +175,7 @@ form {
 
 .poster {
     width: 100px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     ;
     /* height: 147px; */
 }
@@ -203,7 +203,7 @@ form {
 .plot {
     width: 300px;
     height: 60px;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     font-weight: 400;
     line-height: 1.5;
     /* color: #A5A5A5; */
