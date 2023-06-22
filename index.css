@@ -1,7 +1,7 @@
 html,
 body {
     font-family: 'Inter', sans-serif;
-    padding: 0;
+    padding: 1em 0;
     background-color: #121212;
     margin: 0;
 }
@@ -102,10 +102,10 @@ i {
     max-width: 550px;
     max-height: 779px;
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
     margin: 0 auto;
     border: 1px solid yellow;
-    /* padding: 2em 0; */
+    /* padding: 1em 0; */
 }
 
 .filler-img {
