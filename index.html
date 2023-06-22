@@ -6,7 +6,7 @@
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/8e15126712.js" crossorigin="anonymous"></script>
-   
+
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,24 +18,28 @@
 </head>
 
 <body>
-
-    <header>
-        <p>Find your film</p>
-        <a><span>My Watchlist</span></a>
-    </header>
-    <div class="list" id="list">
-        <form id="myForm">
-            <div class="search-container">
-                <i class="fa fa-search"></i>
-                <input type="text" name="search" placeholder="Blade Runner">
-                <button id="search">Search</button>
-            </div>
-        </form>
-        <div class="movie-list mt" id="movie-list">
-            <img src="images/film-black.png" class="filler-img" />
+    <div class="container" id="list">
+        <div class="header-div">
+            <header>
+                <p>Find your film</p>
+                <a>My Watchlist</a>
+            </header>
+        </div>
+        <div>
+            <form id="myForm">
+                <div class="search-container">
+                    <i class="fa fa-search"></i>
+                    <input type="text" name="search" placeholder="Blade Runner">
+                    <button id="search">Search</button>
+                </div>
+            </form>
+        </div>
+        <div class="movie-list" id="movie-list">
+            <img src="images/movie-roll.png" class="filler-img" />
             <p>Start exploring</p>
         </div>
     </div>
     <script src="/index.js" type="module"></script>
 </body>
+
 </html>
