@@ -23,7 +23,7 @@ const movieListDiv = document.getElementById('movie-list')
 document.getElementById('myForm').addEventListener('submit', async (event) => {
     event.preventDefault();
     movieListDiv.innerHTML = ''
-    movieListDiv.classList.remove('mt')
+    movieListDiv.classList.remove('movie-list-margin')
     
     let html = ''
     const myFormData = new FormData(event.target)

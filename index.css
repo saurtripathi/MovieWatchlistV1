@@ -102,7 +102,7 @@ i {
     display: flex;
     flex-direction: column;
     max-width: 550px;
-    max-height: 779px;
+    /* max-height: 779px; */
     width: 100vw;
     height: 92vh;
     margin: 0 auto;
@@ -125,10 +125,15 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 25vh 0;
+
     /* border: 1px solid white; */
     /* justify-self:  */
 }
+
+.movie-list-margin {
+    margin: 25vh 0;
+}
+
 
 .error-div p {
 
@@ -157,12 +162,15 @@ form {
     /* background-color: white; */
     border-bottom: 1.5px solid #2C2C2C;
     padding: 2em 0;
-
-
+    max-width: 462px;
+    width: 87%;
+    border:1px solid white;
+    margin-top: 2.625em;
 }
 
 .poster {
     width: 100px;
+    border: 1px solid red;;
     /* height: 147px; */
 }
 
