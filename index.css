@@ -49,6 +49,8 @@ header a {
     text-align: right;
     color: #FFFFFF;
     margin-left: 5em;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .genre span {
