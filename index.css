@@ -211,7 +211,6 @@ form {
 
 .plot {
     width: 300px;
-    height: 60px;
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 1.5;
@@ -238,7 +237,7 @@ form {
 
 .checked {
     color: #FEC654;
-    margin: auto 4px auto 0;
+    margin: auto 4px;
 }
 
 .rating {
