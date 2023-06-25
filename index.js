@@ -15,7 +15,7 @@ localStorage.clear()
 const movieListDiv = document.getElementById('movie-list')
 const watchlistLnk = document.getElementById('watchlist')
 
-
+const scrollBtn = document.getElementById('scroll-btn')
 document.getElementById('myForm').addEventListener('submit', async (event) => {
 
     event.preventDefault();
@@ -121,3 +121,22 @@ document.body.onclick = event => {
 
 
 }
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+scrollBtn.addEventListener('click',topFunction)

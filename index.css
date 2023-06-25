@@ -254,6 +254,30 @@ form {
 .white {
     color:white;
 }
+
+#scroll-btn {
+
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 80vw;
+    z-index: 99;
+    font-size: 2rem;
+    /* border: none;
+    outline: none; */
+    /* background-color: red; */
+    color: #A5A5A5;
+    cursor: pointer;
+    /* padding: 15px; */
+    /* border-radius: 4px; */
+  }
+
+  #scroll-btn:hover {
+    color: white;
+  }
+
+
+
 @media(min-width:400px) {
     
     .movie-card {
