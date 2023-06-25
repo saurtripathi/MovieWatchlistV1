@@ -154,11 +154,9 @@ form {
 
 .movie-list p {
     margin: 0;
-    font-size: 1.125rem;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 1.2;
     text-align: left;
-    color: #787878;
 }
 
 .movie-card {
@@ -197,6 +195,7 @@ form {
 
 .title {
     display: flex;
+    
     /* border: 1px solid red; */
 }
 
@@ -211,8 +210,7 @@ form {
 
 .plot {
     width: 300px;
-    font-size: 0.8rem;
-    font-weight: 400;
+    font-size: 0.875rem;
     line-height: 1.5;
     /* color: #A5A5A5; */
     color: #A5A5A5;
@@ -242,7 +240,7 @@ form {
 
 .rating {
     font-weight: 400;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     line-height: 1.5;
     color: #FFFFFF;
     font-style: normal;
@@ -284,6 +282,14 @@ input {
 
 .description {
     display: flex;
+}
+
+.poster-div {
+    height: 80%;
+}
+
+header a {
+    margin-left:15em;
 }
 
 }
