@@ -34,8 +34,6 @@ header p {
     display: inline;
     font-size: 1.5rem;
     line-height: 1rem;
-    /* font-size: 42.7947px;
-    line-height: 24px; */
     font-weight: 800;
     font-style: normal;
     color: #fdfcdc;
@@ -206,6 +204,7 @@ form {
     justify-content: space-between;
     align-items: center;
     margin: 0.5em 0;
+    gap: 1em;
 }
 
 .plot {
@@ -252,7 +251,9 @@ form {
     height: 10px;
     background-color: white;
 }
-
+.white {
+    color:white;
+}
 @media(min-width:400px) {
     
     .movie-card {
@@ -260,6 +261,7 @@ form {
     }
 button {
     margin-left:auto;
+    padding: 1em;
 }
 input {
     max-width: 100%;
@@ -278,6 +280,7 @@ input {
 
 .genre {
     margin-left: 1em;
+
 }
 
 .description {
@@ -289,7 +292,7 @@ input {
 }
 
 header a {
-    margin-left:15em;
+    margin-left:12em;
 }
 
 }
