@@ -18,35 +18,28 @@
 </head>
 
 <body>
-    <div class="container" id="list">
+    <div class="container" id="container">
         <div class="header-div">
             <header>
                 <p>My Watchlist</p>
                 <a href="index.html">Search for movies</a>
             </header>
         </div>
-        <div>
-            <form id="myForm">
-                <div class="search-container">
-                    <i class="fa fa-search"></i>
-                    <input type="text" name="search" placeholder="Blade Runner">
-                    <button id="search">Search</button>
+        <div class="movie-list movie-list-margin" id="movie-list">
+                <p>
+                Your watchlist is looking a little empty...
+                </p>
+                <div>
+                <p>
+                <i class="fa-solid fa-circle-plus btn"></i>Let’s add some movies!
+                </p>
                 </div>
-            </form>
         </div>
-        <div class="movie-list" id="movie-list">
-            <img src="images/movie-roll.png" class="filler-img" />
-            <p>Start exploring</p>
-        </div>
+                                       
     </div>
-    <script src="/index.js" type="module"></script>
+    <script src="/watchlist.js" type="module">
+    </script>
 </body>
 
 </html>
 
-
-
-
-
-
-<a><span>Search for movies</span></a>

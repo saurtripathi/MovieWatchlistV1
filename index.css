@@ -100,7 +100,8 @@ button {
 
 i {
     color: white;
-    padding: 0.5rem;
+    padding: 0.5em;
+    cursor: pointer;
 }
 
 .container {
@@ -151,14 +152,14 @@ form {
 
 }
 
-/* .movie-list p {
+.movie-list p {
     margin: 0;
     font-size: 1.125rem;
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
     color: #787878;
-} */
+}
 
 .movie-card {
     display: flex;
@@ -178,6 +179,7 @@ form {
     border: 1.5px solid #2C2C2C;
     border-radius: 5px;
     background-size: cover;
+    background-color: red;
 }
 
 .poster-div {
