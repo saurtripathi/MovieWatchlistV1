@@ -19,24 +19,28 @@
 
 <body>
     <div class="container" id="container">
+
         <div class="header-div">
-            <header>
+            <div class="header-content-div">
                 <p>My Watchlist</p>
                 <a href="index.html">Search for movies</a>
-            </header>
+            </div>
         </div>
-        <div class="movie-list movie-list-margin white"  id="movie-list">
-                <p>
+
+
+        <div class="movie-list movie-list-margin white" style="text-align: center;" id="movie-list">
+                <div >
+                <p class="m0">
                 Your watchlist is looking a little empty...
                 </p>
-                <div>
-                <p>
-                <i class="fa-solid fa-circle-plus btn"></i>Let’s add some movies!
+                <p class="m0">
+                <i class="fa-solid fa-circle-plus white btn"></i>Let’s add some movies!
                 </p>
                 </div>
         </div>
                                        
     </div>
+    <i class="fa-solid fa-circle-up" id="scroll-btn" title="Go to top"></i>
     <script src="/watchlist.js" type="module">
     </script>
 </body>

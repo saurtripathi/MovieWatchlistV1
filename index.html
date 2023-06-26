@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="index.css">
@@ -20,26 +19,25 @@
 <body>
     <div class="container" id="container">
         <div class="header-div">
-            <header>
+            <div class="header-content-div">
                 <p>Find your film</p>
-                <a href="watchlist.html" id="watchlist" >My Watchlist</a>
-            </header>
-        </div>
-            <div >
-                <form id="myForm" class="search-container" >
-                        <i class="fa fa-search"></i>
-                        <input type="text" name="search" placeholder="Blade Runner">
-                        <button id="search">Search</button>
-                </form>
+                <a href="watchlist.html" id="watchlist">My Watchlist</a>
             </div>
+        </div>
+        <div class="search-container">
+            <form id="search-form" >
+                <i class="fa fa-search" style="color: #A5A5A5;"></i>
+                <input type="text" name="search" placeholder="Blade Runner">
+                <button id="search">Search</button>
+            </form>
+        </div>
         <div class="movie-list movie-list-margin" id="movie-list">
             <img src="images/movie-roll.png" class="filler-img" />
-            <p>Start exploring</p>
+            <p style="color: #A5A5A5;">Start exploring</p>
         </div>
-                                       
+
     </div>
     <i class="fa-solid fa-circle-up" id="scroll-btn" title="Go to top"></i>
-    <!-- <button id="scroll-btn" title="Go to top">Top</button> -->
     <script src="/index.js" type="module"></script>
 </body>
 

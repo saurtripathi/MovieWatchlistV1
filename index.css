@@ -11,46 +11,52 @@ body {
 }
 
 .header-div {
+    position: fixed;
     display: flex;
     /* flex-direction: column; */
-    background-image: url("images/theatre-2.jpeg");
+    background-image: url("images/poster-image.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 550px;
     width: 100%;
     max-height: 208px;
     height: 100vh;
-    /* color: yellow; */
+    /* border: 1px solid white; */
+}
+
+.header-content-div {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid red; */
+    opacity: 0.8;
+    color: white;
 }
 
-header {
-    width: 100%;
-}
 
-header p {
+.header-content-div p {
     display: inline;
     font-size: 1.5rem;
     line-height: 1rem;
     font-weight: 800;
     font-style: normal;
-    color: #fdfcdc;
+    color: white;
     margin-left: 1em;
 }
 
-header a {
-    position: absolute;
+.header-content-div a {
+    /* position: absolute; */
     font-style: normal;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1rem;
     text-align: right;
     color: #fdfcdc;
-    margin-left: 5em;
     cursor: pointer;
     text-decoration: none;
+    margin-right: 1em;
 }
 
 .genre span {
@@ -66,6 +72,7 @@ input {
     border: none;
     text-align: left;
     color:white;
+    padding: 0.5em 1em;
 }
 
 button {
@@ -80,24 +87,29 @@ button {
 }
 
 .search-container {
-    /* position: absolute; */
-    display: flex;
+    position: fixed;
     max-width: 462px;
     width: 87%;
     height: 38px;
-    /* top: 27vh;
-    left: 6vw; */
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -20px;
     border-radius: 0.375em;
-    background-color: #2E2E2F;
+    /* background-color: #2E2E2F; */
+    /* border: 1px solid red; */
     padding: 0.125em;
-    /* border: 1px solid yellow; */
+    top:190px;
+    margin: 0 auto; 
+    left: 0;
+    right: 0;
+    
+ 
+}
+
+#search-form {
+    display: flex;
+    background-color: #2E2E2F;
+    border-radius: 5px;
 }
 
 i {
-    color: white;
     padding: 0.5em;
     cursor: pointer;
 }
@@ -110,6 +122,7 @@ i {
     width: 100vw;
     /* height: 92vh; */
     margin: 0 auto;
+    justify-content: space-between;
 }
 
 .filler-img {
@@ -127,34 +140,11 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1em;
-    /* border: 1px solid white; */
-    /* justify-self:  */
+    padding-top: 35vh;
 }
 
 .movie-list-margin {
     margin: 25vh 0;
-}
-
-
-.error-div p {
-
-    /* width: 321px;
-    height: 40px;  */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.125rem;
-    text-align: center;
-    color: #787878;
-
-}
-
-.movie-list p {
-    margin: 0;
-    /* font-weight: 700; */
-    line-height: 1.2;
-    text-align: left;
 }
 
 .movie-card {
@@ -214,6 +204,9 @@ form {
     /* color: #A5A5A5; */
     color: #A5A5A5;
     text-align: left;
+    line-height: 1.2;
+    text-align: left;
+    color: #A5A5A5;
     margin: 0;
 }
 
@@ -276,7 +269,10 @@ form {
     color: white;
   }
 
-
+.m0 {
+    margin: 0;
+    color: #A5A5A5;
+}
 
 @media(min-width:400px) {
     
