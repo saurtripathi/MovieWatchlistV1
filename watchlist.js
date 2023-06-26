@@ -1,9 +1,9 @@
-import { getMovieCardHtml,windowScroll } from "./utilities.js"
+import { getMovieCardHtml, windowScroll } from "./utilities.js"
 
 const addBtn = document.getElementById('add-to-watchlist')
 const movieListDiv = document.getElementById('movie-list')
 
-let clickedToAddToWatchlistArray = []
+// let clickedToAddToWatchlistArray = []
 let movieArray = []
 
 
@@ -21,8 +21,14 @@ if (document.querySelector('.fa-circle-plus')) {
 }
 
 movieArray = JSON.parse(localStorage.getItem("movieArray"))
-clickedToAddToWatchlistArray = JSON.parse(localStorage.getItem('clickedToAddToWatchlistArray'))
-if (clickedToAddToWatchlistArray.length !== 0) {
+const clickedToAddToWatchlistArray = JSON.parse(localStorage.getItem('clickedToAddToWatchlistArray'))
+
+
+
+
+if (clickedToAddToWatchlistArray === null) {
+    console.log('empty')
+} else if (clickedToAddToWatchlistArray.length !== 0) {
     movieListDiv.innerHTML = ''
     movieListDiv.classList.remove('movie-list-margin')
     for (let i = 0; i < clickedToAddToWatchlistArray.length; i++) {
@@ -40,8 +46,7 @@ if (clickedToAddToWatchlistArray.length !== 0) {
             }
         }
     }
-} else {
-    console.log('clickedToAddToWatchlistArray is empty')
+
 }
 
 

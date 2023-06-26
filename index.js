@@ -10,7 +10,8 @@ const watchlistLnk = document.getElementById('watchlist')
 const formElement = document.getElementById('search-form')
 let movie = {}
 
-localStorage.clear()
+    localStorage.clear()
+
 
     formElement.onsubmit = async (event) => {
 
