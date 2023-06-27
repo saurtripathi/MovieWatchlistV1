@@ -1,14 +1,13 @@
-import { getMovieCardHtml, windowScroll } from './utilities.js'
+    import { getMovieCardHtml, windowScroll } from './utilities.js'
 
-const baseUrl = 'https://www.omdbapi.com/'
-const apikey = '232da52c'
-const imdbIdArray = []
-const clickedToAddToWatchlistArray = []
-const movieArray = []
-const movieListDiv = document.getElementById('movie-list')
-const watchlistLnk = document.getElementById('watchlist')
-const formElement = document.getElementById('search-form')
-let movie = {}
+    const baseUrl = 'https://www.omdbapi.com/'
+    const apikey = '232da52c'
+    const clickedToAddToWatchlistArray = []
+    const movieArray = []
+    const movieListDiv = document.getElementById('movie-list')
+    const watchlistLnk = document.getElementById('watchlist')
+    const formElement = document.getElementById('search-form')
+    let movie = {}
 
     localStorage.clear()
 
@@ -19,21 +18,26 @@ let movie = {}
 
     const myFormData = new FormData(event.target)
     const searchParameter = myFormData.get('search')
+    console.log(searchParameter)
     //Fetching the result for title entered in search box.
     const response = await fetch(`${baseUrl}?apikey=${apikey}&s=${searchParameter}`)
     const data = await response.json()
 
 
     movieListDiv.innerHTML = ''
+
+    console.log(movieListDiv.innerHTML)
+
     if (data.Response === 'False') {
         movieListDiv.classList.add('movie-list-margin')
         movieListDiv.innerHTML = `
-                                <p style="margin:0 1em;" >
+                                <p style="margin:0 1em;color:#A5A5A5;text-align:center;" >
                                 Unable to find what you’re looking for. Please try another search.
                                 </p>  
                                 `
     } else {
         //Storing the imdbId of each movie from result into imdbIdArray
+        const imdbIdArray = []
         movieListDiv.classList.remove('movie-list-margin')
         data.Search.forEach(movie => {
             imdbIdArray.push(movie.imdbID)
