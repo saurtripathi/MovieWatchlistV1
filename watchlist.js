@@ -79,6 +79,11 @@ document.body.onclick = event => {
     } else if (event.target.id === 'add-to-watchlist') {
         document.location.href = 'index.html'
     }
+
+    if (event.target.id === 'scroll-btn') {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
 }
 
 windowScroll()

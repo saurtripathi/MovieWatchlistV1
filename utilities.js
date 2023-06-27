@@ -23,7 +23,9 @@
 }
 
 export function windowScroll(){
+
     window.onscroll = function () {
+
         (document.body.scrollTop > 20 ||
             document.documentElement.scrollTop > 20)
             ? document.getElementById('scroll-btn').style.display = "block"
